@@ -1,9 +1,5 @@
 const removeFromArray = function (array, ...remove) {
 
-  // Loop through args array and compare each item to
-  // each item in the given array, then remove if they are
-  // ===
-
 
   // remove.forEach(itemToRemove => {
   //   array.forEach((arrayItem, i) => {
