@@ -1,6 +1,17 @@
-const palindromes = function () {
+// get rid of capitalization, spaces, commas, punctuation, dashes, etc.
+// reverse the string while retaining the original
+// compare the strings for equality
 
+const palindromes = function (str) {
+  var re = /[^A-Za-z0-9]/g;
+  str = str.toLowerCase().replace(re, "");
+  var len = str.length;
+  for (var i = 0; i < len / 2; i++) {
+    if (str[i] !== str[len - 1 - i]) {
+      return false;
+    }
+  }
+  return true;
 };
-
 // Do not edit below this line
 module.exports = palindromes;
