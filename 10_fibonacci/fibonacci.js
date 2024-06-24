@@ -7,9 +7,10 @@ const fibonacci = function (paramNum) {
   const num = Number(paramNum);
   if (num === 0) {
     return 0;
-  }
-  if (num === 1) {
+  } else if (num === 1) {
     return 1;
+  } else if (num < 0) {
+    return "OOPS";
   }
   const array = [1, 1];
   for (let i = 2; i < num; i++) {
